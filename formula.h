@@ -12,7 +12,7 @@ public:
     void setR(double R) { }
     double getR() {return 0;}
     void setH(double H) { this->h = H; }
-    double getH() {return 0;}
+    double getH() {return h;}
     double getS() {return 0;}
     void calculate();
     bool areValuesGood() {

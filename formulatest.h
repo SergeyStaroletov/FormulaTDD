@@ -22,7 +22,7 @@ private slots:
     void testGetZeroSAfterCalculation();
     void testZeroValuesGood();
     void testSomeValuesNotGood();
-
+    void testSetGetH2();
 
 };
 

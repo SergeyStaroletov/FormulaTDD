@@ -58,4 +58,10 @@ void FormulaTest::testSomeValuesNotGood() {
     QCOMPARE(formula.areValuesGood(), false);
 }
 
+void FormulaTest::testSetGetH2() {
+    Formula formula;
+    formula.setH(-1);
+    QCOMPARE(formula.getH(), -1);
+}
+
 QTEST_MAIN(FormulaTest)
