@@ -92,4 +92,13 @@ void FormulaTest::testSomeValuesNotGoodAgain() {
 }
 
 
+void FormulaTest::testSomeValuesNotGoodAgainAgain() {
+    Formula formula;
+    formula.setH(-1);
+    formula.setR(-1);
+    QCOMPARE(formula.areValuesGood(), false);
+}
+
+
+
 QTEST_MAIN(FormulaTest)
