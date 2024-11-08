@@ -1,6 +1,8 @@
 #include "formulatest.h"
 #include "formula.h"
+#include <math.h>
 
+#define eps 0.0001
 
 FormulaTest::FormulaTest(QObject *parent)
     : QObject{parent}
@@ -63,5 +65,14 @@ void FormulaTest::testSetGetH2() {
     formula.setH(-1);
     QCOMPARE(formula.getH(), -1);
 }
+
+void FormulaTest::testSfor11() {
+    Formula formula;
+    formula.setH(1);
+    formula.setR(1);
+    formula.calculate();
+    QVERIFY(fabs(formula.getS() - 2 * M_PI) < eps);
+}
+
 
 QTEST_MAIN(FormulaTest)

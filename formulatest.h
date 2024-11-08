@@ -23,6 +23,8 @@ private slots:
     void testZeroValuesGood();
     void testSomeValuesNotGood();
     void testSetGetH2();
+    void testSfor11();
+
 
 };
 
