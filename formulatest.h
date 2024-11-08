@@ -17,7 +17,7 @@ private slots:
     void testWork();
     void testFormulaClassCreation();
     void testSetGetR();
-
+    void testSetGetH();
 };
 
 #endif // FORMULATEST_H

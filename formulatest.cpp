@@ -23,5 +23,11 @@ void FormulaTest::testSetGetR() {
     QCOMPARE(formula.getR(), 0);
 }
 
+void FormulaTest::testSetGetH() {
+    Formula formula;
+    formula.setH(0);
+    QCOMPARE(formula.getH(), 0);
+}
+
 
 QTEST_MAIN(FormulaTest)
