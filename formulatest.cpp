@@ -17,6 +17,11 @@ void FormulaTest::testFormulaClassCreation() {
     QVERIFY(&formula != nullptr);
 }
 
+void FormulaTest::testSetGetR() {
+    Formula formula;
+    formula.setR(0);
+    QCOMPARE(formula.getR(), 0);
+}
 
 
 QTEST_MAIN(FormulaTest)

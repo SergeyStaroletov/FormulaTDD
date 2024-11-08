@@ -16,7 +16,7 @@ signals:
 private slots:
     void testWork();
     void testFormulaClassCreation();
-
+    void testSetGetR();
 
 };
 
