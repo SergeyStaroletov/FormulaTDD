@@ -74,5 +74,22 @@ void FormulaTest::testSfor11() {
     QVERIFY(fabs(formula.getS() - 2 * M_PI) < eps);
 }
 
+void FormulaTest::testSfor11withCheck() {
+    Formula formula;
+    formula.setH(1);
+    formula.setR(1);
+    formula.calculate();
+    QCOMPARE(formula.areValuesGood(), true);
+    QVERIFY(fabs(formula.getS() - 2 * M_PI) < eps);
+}
+
+void FormulaTest::testSomeValuesNotGoodAgain() {
+    Formula formula;
+    formula.setH(-1);
+    formula.setR(-1);
+    formula.calculate();
+    QCOMPARE(formula.areValuesGood(), false);
+}
+
 
 QTEST_MAIN(FormulaTest)

@@ -24,6 +24,8 @@ private slots:
     void testSomeValuesNotGood();
     void testSetGetH2();
     void testSfor11();
+    void testSfor11withCheck();
+    void testSomeValuesNotGoodAgain();
 
 
 };
