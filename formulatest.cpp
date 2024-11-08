@@ -34,6 +34,13 @@ void FormulaTest::testGetSDefault() {
     QCOMPARE(formula.getS(), 0);
 }
 
+void FormulaTest::testGetZeroSAfterCalculation() {
+    Formula formula;
+    formula.setH(0);
+    formula.setR(0);
+    formula.calculate();
+    QCOMPARE(formula.getS(), 0);
+}
 
 
 QTEST_MAIN(FormulaTest)

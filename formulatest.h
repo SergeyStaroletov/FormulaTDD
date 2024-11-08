@@ -19,6 +19,7 @@ private slots:
     void testSetGetR();
     void testSetGetH();
     void testGetSDefault();
+    void testGetZeroSAfterCalculation();
 
 };
 

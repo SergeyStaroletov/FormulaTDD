@@ -4,3 +4,8 @@ Formula::Formula()
 {
 
 }
+
+
+void Formula::calculate() {
+
+}

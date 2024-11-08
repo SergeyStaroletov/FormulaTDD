@@ -11,6 +11,8 @@ public:
     void setH(double H) { }
     double getH() {return 0;}
     double getS() {return 0;}
+    void calculate();
+
 };
 
 #endif // FORMULA_H
