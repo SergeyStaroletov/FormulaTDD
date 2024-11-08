@@ -50,5 +50,12 @@ void FormulaTest::testZeroValuesGood() {
     QCOMPARE(formula.areValuesGood(), true);
 }
 
+void FormulaTest::testSomeValuesNotGood() {
+    Formula formula;
+    formula.setH(-1);
+    formula.setR(0);
+    formula.calculate();
+    QCOMPARE(formula.areValuesGood(), false);
+}
 
 QTEST_MAIN(FormulaTest)

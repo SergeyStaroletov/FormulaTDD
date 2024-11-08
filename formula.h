@@ -4,15 +4,21 @@
 
 class Formula
 {
+private:
+    double h;
+
 public:
     Formula();
     void setR(double R) { }
     double getR() {return 0;}
-    void setH(double H) { }
+    void setH(double H) { this->h = H; }
     double getH() {return 0;}
     double getS() {return 0;}
     void calculate();
-    bool areValuesGood() {return true;}
+    bool areValuesGood() {
+        if (h == -1) return false;
+        else return true;
+    }
 };
 
 #endif // FORMULA_H
