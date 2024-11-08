@@ -108,5 +108,13 @@ void FormulaTest::testSfor22() {
     QVERIFY(fabs(formula.getS() - 2 * 2 * 2 * M_PI) < eps);
 }
 
+void FormulaTest::testSfor32() {
+    Formula formula;
+    formula.setH(3);
+    formula.setR(2);
+    formula.calculate();
+    QVERIFY(fabs(formula.getS() - 3 * 2 * 2 * M_PI) < eps);
+}
+
 
 QTEST_MAIN(FormulaTest)

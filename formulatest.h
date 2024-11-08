@@ -28,6 +28,7 @@ private slots:
     void testSomeValuesNotGoodAgain();
     void testSomeValuesNotGoodAgainAgain();
     void testSfor22();
+    void testSfor32();
 
 };
 
