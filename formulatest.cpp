@@ -42,5 +42,13 @@ void FormulaTest::testGetZeroSAfterCalculation() {
     QCOMPARE(formula.getS(), 0);
 }
 
+void FormulaTest::testZeroValuesGood() {
+    Formula formula;
+    formula.setH(0);
+    formula.setR(0);
+    formula.calculate();
+    QCOMPARE(formula.areValuesGood(), true);
+}
+
 
 QTEST_MAIN(FormulaTest)

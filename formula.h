@@ -12,7 +12,7 @@ public:
     double getH() {return 0;}
     double getS() {return 0;}
     void calculate();
-
+    bool areValuesGood() {return true;}
 };
 
 #endif // FORMULA_H
