@@ -18,7 +18,8 @@ public:
     double getS() {return s;}
     void calculate();
     bool areValuesGood() {
-        if (h == -1 || r == -1) return false;
+        if (h < 0) return false;
+        if (r < 0) return false;
         else return true;
     }
 };
