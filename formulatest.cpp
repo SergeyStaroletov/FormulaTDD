@@ -100,5 +100,13 @@ void FormulaTest::testSomeValuesNotGoodAgainAgain() {
 }
 
 
+void FormulaTest::testSfor22() {
+    Formula formula;
+    formula.setH(2);
+    formula.setR(2);
+    formula.calculate();
+    QVERIFY(fabs(formula.getS() - 2 * 2 * 2 * M_PI) < eps);
+}
+
 
 QTEST_MAIN(FormulaTest)
