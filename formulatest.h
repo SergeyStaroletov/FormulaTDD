@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QtTest/QtTest>
 
+
 class FormulaTest : public QObject
 {
     Q_OBJECT
@@ -14,6 +15,7 @@ signals:
 
 private slots:
     void testWork();
+    void testFormulaClassCreation();
 
 
 };
